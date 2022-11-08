@@ -13,7 +13,7 @@ export class AppComponent {
   constructor(private store: Store<{ count: number }>) {
     this.count$ = store.select('count');
   }
-  //Implement the increment, decrement, and reset methods by dispatching actions to the store.
+
   increment() {
     this.store.dispatch(increment());
   }
